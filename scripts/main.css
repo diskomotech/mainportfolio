@@ -16,21 +16,17 @@ html, body, h1, h2, h3, h4, p, div, a, ul, li {
 header, .tagline, nav, footer {
 		background-color: #003090;
 }
-a {
-	text-decoration: none;
-	color: lightgray;
-}
-footer a {
-		font-weight: bold;
-}
 nav ul {
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
     width: 100%;
     list-style-type: none;
 }
 nav li {
       flex-grow: 1;
-}
+      flex-basis: auto;
+ }
 .tagline, nav, footer {
 	opacity: 0.75;
 }
@@ -41,7 +37,7 @@ body {
 	color: lightgray;
 }
 header {
-	font-size: 4.375em;
+	font-size: 3.875em;
 	font-weight: bold;
 	text-align: center;
 }
@@ -61,8 +57,7 @@ p {
 	text-align: center;
 }
 .about p {
-	padding: 0.9375em;
-	margin: 0.9375em;
+	padding: 0.5em 0.9375em;
 }
 .skills ul {
 	font-size: 1.5em;
@@ -75,6 +70,13 @@ footer {
 	padding: 0.9375em 0 0.9375em 0;
 	font-size: 1.25em;
 	margin: 0 auto 0 auto;
+}
+a {
+	text-decoration: none;
+	color: lightgray;
+}
+footer a {
+		font-weight: bold;
 }
 footer a:hover {
 	color: #5571A3;
