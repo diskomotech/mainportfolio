@@ -1,3 +1,5 @@
+/* Resetting the browser's default CSS styles */
+
 html, body, h1, h2, h3, h4, p, div, a, ul, li {
 	padding:0;
 	border:0;
@@ -5,6 +7,9 @@ html, body, h1, h2, h3, h4, p, div, a, ul, li {
 	font:inherit;
 	font-size:100%;
 }
+
+/* Applying layout wrapper (in flexbox) for the whole page */
+
 .site {
 	display: flex-inline;
 	min-height: 100vh;
@@ -13,8 +18,20 @@ html, body, h1, h2, h3, h4, p, div, a, ul, li {
 .site-content {
 	flex: 1;
 }
-header, .tagline, nav, footer {
+
+/* Setting background to blue */
+
+header, nav, footer {
 		background-color: #003090;
+}
+
+/* Hacked together nav bar layout. Could do with some refining at some stage but works for now*/
+
+nav {
+	padding: 1.25rem 0 1.25rem 0;
+	font-weight: 100;
+	font-size: 2.375em;
+	text-align: center;
 }
 nav ul {
 	display: flex;
@@ -27,31 +44,37 @@ nav li {
       flex-grow: 1;
       flex-basis: auto;
  }
-.tagline, nav, footer {
+
+/* Applied opacity to get lighter shade of blue */
+
+nav, footer {
 	opacity: 0.75;
 }
-body {
-	font-family: 'open sans', 'Helvetica Neue', sans-serif;
-	background-color: #0071CC;
-	color: lightgray;
-}
+
+/* Setting fonts for header and body */
+
 header {
 	font-family: 'roboto', sans-serif;
 	font-size: 3.875em;
 	text-align: center;
 	font-weight: bold;
 }
-.tagline, nav {
-	padding: 1.25rem 0 1.25rem 0;
-	font-weight: 100;
-	font-size: 2.375em;
-	text-align: center;
+body {
+	font-family: 'open sans', 'Helvetica Neue', sans-serif;
+	background-color: #0071CC;
+	color: lightgray;
 }
+
+/* Photo of me centred */
+
 .about img {
 	padding-top: 0.9375em;
 	display: block;
 	margin: 0 auto;
 }
+
+/* General spacing for body text */
+
 p {
 	font-size: 1.5em;
 	text-align: center;
@@ -59,12 +82,18 @@ p {
 .about p {
 	padding: 0.5em 0.9375em;
 }
+
+/* Centred skills list */
+
 .skills ul {
 	font-size: 1.5em;
 	width: 9%;
 	margin: auto;
 	padding: 0.9375em 0 0.9375em 0;
 }
+
+/* Footer stuff */
+
 footer {
 	text-align: center;
 	padding: 0.9375em 0 0.9375em 0;
