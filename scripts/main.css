@@ -110,3 +110,9 @@ footer a {
 footer ul {
 	text-align: center;
 }
+
+/* Sticky footer */
+
+.wrap {
+	min-height: calc(100vh - 87.8px);
+}
