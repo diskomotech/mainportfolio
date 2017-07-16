@@ -1,0 +1,109 @@
+/* Resetting the browser's default CSS styles */
+
+html, body, h1, h2, h3, h4, p, div, a, ul, li {
+	padding:0;
+	border:0;
+	margin:0;
+	font:inherit;
+	font-size:100%;
+}
+
+/* Setting background to blue */
+
+header, nav, footer {
+		background-color: #003090;
+}
+
+/* Hacked together nav bar layout. Could do with some refining at some stage but works for now*/
+
+nav {
+	padding: 1.25rem 0 1.25rem 0;
+	font-weight: 100;
+	font-size: 2.375em;
+	text-align: center;
+}
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+    width: 100%;
+    list-style-type: none;
+}
+nav li {
+      flex-grow: 1;
+      flex-basis: auto;
+ }
+
+/* Applied opacity to get lighter shade of blue */
+
+nav, footer {
+	opacity: 0.75;
+}
+
+/* Setting fonts for header, body and holding h1 message */
+
+header, h1 {
+	font-family: 'roboto', sans-serif;
+	font-size: 3.875em;
+	text-align: center;
+	font-weight: bold;
+}
+body {
+	font-family: 'open sans', 'Helvetica Neue', sans-serif;
+	background-color: #0071CC;
+	color: lightgray;
+}
+
+/* Holding message text */
+
+.holding {
+	vertical-align: text-top;
+	position: relative;
+	border-top: 10px;
+}
+
+/* General spacing for body text */
+
+p {
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/* Contact form styling */
+
+input[type=text], input[type=email], textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #lightgray;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+/* Submit button styling */
+
+
+
+/* Footer stuff */
+
+footer {
+	text-align: center;
+	padding: 0.7375em 0 0.4375em 0;
+
+	margin: 0 auto 0 auto;
+}
+ a {
+	text-decoration: none;
+	color: lightgray;
+}
+footer a {
+	padding-left: 0.6375em;
+}
+
+/* Sticky footer */
+
+.wrap {
+	min-height: calc(100vh - 161px);
+}

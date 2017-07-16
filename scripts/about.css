@@ -1,0 +1,115 @@
+/* Resetting the browser's default CSS styles */
+
+html, body, h1, h2, h3, h4, p, div, a, ul, li {
+	padding:0;
+	border:0;
+	margin:0;
+	font:inherit;
+	font-size:100%;
+}
+
+/* Applying layout wrapper (in flexbox) for the whole page */
+
+.site {
+	display: flex-inline;
+	min-height: 100vh;
+	flex-direction: column;
+}
+.site-content {
+	flex: 1;
+}
+
+/* Setting background to blue */
+
+header, nav, footer {
+		background-color: #003090;
+}
+
+/* Hacked together nav bar layout. Could do with some refining at some stage but works for now*/
+
+nav {
+	padding: 1.25rem 0 1.25rem 0;
+	font-weight: 100;
+	font-size: 2.375em;
+	text-align: center;
+}
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+    width: 100%;
+    list-style-type: none;
+}
+nav li {
+      flex-grow: 1;
+      flex-basis: auto;
+ }
+
+/* Applied opacity to get lighter shade of blue */
+
+nav, footer {
+	opacity: 0.75;
+}
+
+/* Setting fonts for header and body */
+
+header {
+	font-family: 'roboto', sans-serif;
+	font-size: 3.875em;
+	text-align: center;
+	font-weight: bold;
+}
+body {
+	font-family: 'open sans', 'Helvetica Neue', sans-serif;
+	background-color: #0071CC;
+	color: lightgray;
+}
+
+/* Photo of me centred */
+
+.about img {
+	padding-top: 0.9375em;
+	display: block;
+	margin: 0 auto;
+}
+
+/* General spacing for body text */
+
+p {
+	font-size: 1.5em;
+	text-align: center;
+}
+.about p {
+	padding: 0.5em 0.9375em;
+}
+
+/* Centred skills list */
+
+.skills ul {
+	font-size: 1.5em;
+	width: 9%;
+	margin: auto;
+	padding: 0.9375em 0 0.9375em 0;
+}
+
+/* Footer stuff */
+
+footer {
+	text-align: center;
+	padding: 0.7375em 0 0.4375em 0;
+
+	margin: 0 auto 0 auto;
+}
+ a {
+	text-decoration: none;
+	color: lightgray;
+}
+footer a {
+	padding-left: 0.6375em;
+}
+
+/* Sticky footer */
+
+.wrap {
+	min-height: calc(100vh - 87.8px);
+}
