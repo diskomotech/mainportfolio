@@ -16,7 +16,7 @@ html, body, h1, h2, h3, h4, p, div, a, ul, li {
 	flex-direction: column;
 }
 .site-content {
-	flex: 1;
+	flex: 1 0 auto;
 }
 
 /* Setting background to blue */
@@ -68,9 +68,9 @@ body {
 /* Holding message text */
 
 .holding {
-	vertical-align: text-top;
 	position: relative;
-	border-top: 10px;
+	top: 50%;
+	margin: 150px;
 }
 
 /* General spacing for body text */
@@ -78,9 +78,6 @@ body {
 p {
 	font-size: 1.5em;
 	text-align: center;
-}
-.about p {
-	padding: 0.5em 0.9375em;
 }
 
 /* Footer stuff */
@@ -100,7 +97,3 @@ footer a {
 }
 
 /* Sticky footer */
-
-.wrap {
-	min-height: calc(100vh - 87.8px);
-}
